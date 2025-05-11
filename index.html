@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Încălzirea Globală - Acasă</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: url('background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+            margin-top: 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        h1, h2 {
+            color: #ffffff;
+        }
+
+        ul, ol {
+            display: inline-block;
+            text-align: left;
+            margin: 10px auto 20px auto;
+        }
+
+        table {
+            margin: 0 auto 20px auto;
+            border-collapse: collapse;
+            background-color: rgba(255,255,255,0.2);
+        }
+
+        table th, table td {
+            border: 1px solid #fff;
+            padding: 8px 12px;
+            color: #fff;
+        }
+
+        video, audio, iframe {
+            margin: 20px auto;
+            display: block;
+        }
+
+        .hover-container {
+            position: relative;
+            width: 300px;
+            margin: 30px auto;
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .hover-img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: 0.5s ease;
+        }
+
+        .hover-container:hover .hover-img {
+            opacity: 1;
+        }
+
+        marquee {
+            font-weight: bold;
+            color: #ffffff;
+            margin: 20px 0;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigare -->
+    <nav>
+        <a href="index.html">Acasă</a> |
+        <a href="cauze.html">Cauze</a> |
+        <a href="solutii.html">Soluții</a> |
+        <a href="https://www.greenpeace.org/" target="_blank">Greenpeace</a>
+    </nav>
+
+    <!-- Text derulant -->
+    <marquee behavior="scroll" direction="left">Încălzirea globală ne privește pe toți! Acționează acum!</marquee>
+
+    <!-- Introducere -->
+    <h1>Încălzirea Globală</h1>
+    <p>
+        Încălzirea globală este una dintre cele mai mari provocări ale omenirii. Temperaturile în creștere afectează clima, nivelul mărilor și ecosistemele din întreaga lume.
+    </p>
+    <p>
+        Acest site îți oferă informații despre cauze, efecte și soluții pe care le putem adopta pentru a reduce impactul schimbărilor climatice.
+    </p>
+
+    <!-- Efecte -->
+    <h2>Principalele efecte</h2>
+    <ul>
+        <li>Topirea ghețarilor și calotelor glaciare</li>
+        <li>Creșterea nivelului mării</li>
+        <li>Valuri de căldură extreme</li>
+        <li>Secete severe și pierderi de culturi agricole</li>
+        <li>Dispariția unor specii din cauza schimbărilor rapide</li>
+    </ul>
+
+    <!-- Soluții -->
+    <h2>Ce putem face?</h2>
+    <ol>
+        <li>Reducerea consumului de energie</li>
+        <li>Folosirea transportului public sau a bicicletei</li>
+        <li>Plantarea copacilor și protejarea pădurilor</li>
+        <li>Reciclarea și reducerea deșeurilor</li>
+        <li>Utilizarea surselor de energie regenerabilă</li>
+        <li>Informarea și educarea celor din jur</li>
+    </ol>
+
+    <!-- Temperaturile globale -->
+    <h2>Temperaturi medii globale (°C)</h2>
+    <table>
+        <tr>
+            <th>An</th>
+            <th>Temperatură medie</th>
+        </tr>
+        <tr>
+            <td>2000</td>
+            <td>14.3</td>
+        </tr>
+        <tr>
+            <td>2010</td>
+            <td>14.6</td>
+        </tr>
+        <tr>
+            <td>2020</td>
+            <td>15.0</td>
+        </tr>
+        <tr>
+            <td>2023</td>
+            <td>15.3</td>
+        </tr>
+    </table>
+
+    <p>
+        Temperatura medie globală a crescut constant în ultimele decenii, un semn clar al schimbărilor climatice rapide.
+    </p>
+
+    <!-- Video -->
+    <h2>Documentar despre schimbările climatice</h2>
+    <video width="400" controls>
+        <source src="climate.mp4" type="video/mp4">
+        
+    </video>
+
+    <!-- Audio -->
+    <h2>Sunete din natură</h2>
+    <audio controls>
+        <source src="natura.mp3" type="audio/mpeg">
+        
+    </audio>
+
+    <!-- localStorage -->
+    <script>
+        if (localStorage.getItem("vizite")) {
+            let v = parseInt(localStorage.getItem("vizite")) + 1;
+            localStorage.setItem("vizite", v);
+        } else {
+            localStorage.setItem("vizite", 1);
+        }
+        document.write("<p>Ai vizitat această pagină de " + localStorage.getItem("vizite") + " ori.</p>");
+    </script>
+
+
+    <!-- Simulare interactivă reală -->
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulare Interactivă - CO₂ și Temperatură</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .sim-container {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            margin: 40px auto;
+            border-radius: 20px;
+            width: 80%;
+            max-width: 600px;
+        }
+        input[type=range] {
+            width: 80%;
+        }
+        .output {
+            font-size: 2em;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulare interactivă: CO₂ și temperatura globală</h1>
+    <div class="sim-container">
+        <p>Crește nivelul de CO₂ și observă cum temperatura medie globală se modifică.</p>
+        <label for="co2">Nivel CO₂ (ppm): <span id="co2Value">400</span></label><br>
+        <input type="range" id="co2" name="co2" min="300" max="600" value="400">
+        <div class="output">🌡️ Temperatura estimată: <span id="tempValue">15.0</span> °C</div>
+    </div>
+
+    <script>
+        const co2Slider = document.getElementById('co2');
+        const co2Value = document.getElementById('co2Value');
+        const tempValue = document.getElementById('tempValue');
+
+        function updateTemperature(co2) {
+            // Formula simplificată pentru simula efectul CO₂ asupra temperaturii
+            const baseTemp = 14.0;
+            const temp = baseTemp + ((co2 - 300) * 0.01);
+            return temp.toFixed(1);
+        }
+
+        co2Slider.addEventListener('input', function () {
+            const co2 = this.value;
+            co2Value.textContent = co2;
+            tempValue.textContent = updateTemperature(co2);
+        });
+    </script>
+</body>
+</html>
+
+
+    <!-- Hover imagini -->
+    <div class="hover-container">
+        <img src="PAMANT 1.jpg" alt="Pământ normal" class="image normal-img">
+        <img src="PAMANT IN FLACARI.jpg" alt="Pământ în flăcări" class="image hover-img">
+    </div>
+
+</body>
+</html>
